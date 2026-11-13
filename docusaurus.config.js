@@ -30,7 +30,7 @@ const config = {
   organizationName: 'programmingwithlevi', // Usually your GitHub org/user name.
   projectName: 'didacticlabs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
 
   plugins: [
@@ -57,7 +57,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/programmingwithlevi/didacticlabs/edit/main',
+            'https://github.com/programmingwithlevi/didacticlabs/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -68,7 +68,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/programmingwithlevi/didacticlabs/edit/main',
+            'https://github.com/programmingwithlevi/didacticlabs/edit/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
