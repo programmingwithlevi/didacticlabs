@@ -1,0 +1,109 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 150px;
+  width: 150px;
+}
+.features h3 {
+  color: orange !important;
+}
+.sectionTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: white; /* Adjust or remove if you want it to inherit theme text color */
+}
+.accentText {
+  color: orangered; /* Bright vibrant orange */
+  /* Optional: Add a subtle orange text glow for dark backgrounds */
+  text-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+}
+/* Tightly coupled wrapper container */
+.heroCarContainer {
+  display: flex;
+  flex-wrap: nowrap; /* CRITICAL: Prevents them from ever wrapping or separating */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure the car scales proportionally without breaking layout */
+.heroCarGraphic {
+  width: 55%; /* Takes up a fixed relative portion of the wrapper */
+  max-width: 380px;
+  height: auto;
+  flex-shrink: 1;
+  margin-top: -11rem;
+  margin-left: 11rem;
+  padding-bottom: 11rem;
+}
+
+/* Ensure the button stays locked in scale next to it */
+.goButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: #ffffff !important;
+  font-size: clamp(1.2rem, 2.5vw, 2.2rem); /* Scales down fluidly on smaller viewports */
+  font-weight: 900;
+  padding: 0.6rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 25px rgba(220, 38, 38, 0.6);
+  border: 2px solid #ef4444;
+  white-space: nowrap; /* Keeps "Go!" on a single line */
+  flex-shrink: 0; /* Prevents the button from getting squished */
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  margin-left: 22rem;
+  margin-top: 10rem;
+}
+
+.goButton:hover {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 0 35px rgba(239, 68, 68, 0.9);
+  color: #ffffff !important;
+}
+
+/* HomepageFeatures.module.css */
+
+/* Keep desktop layout clean, but adjust for mobile screens */
+@media screen and (max-width: 768px) {
+  .sectionTitle {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+
+  /* Scale and center the RaceCar SVG so it fits small displays */
+  .heroCarGraphic {
+    width: 100% !important;
+    max-width: 200px !important;
+    height: auto !important;
+    margin: 3rem auto !important;
+    display: block;
+  }
+
+  /* Make the Go! button centered and thumb-friendly on touch screens */
+  .goButton {
+    display: block !important;
+    width: 100%;
+    max-width: 90px;
+    margin: 9rem auto 1.5rem auto !important;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+  }
+}

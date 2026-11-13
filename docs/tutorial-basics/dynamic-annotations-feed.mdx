@@ -1,0 +1,31 @@
+---
+id: dynamic-annotations
+title: Dynamic Annotation Feed
+sidebar_position: 1
+---
+
+import HypothesisAnnotations from '@site/src/components/AnnotationEmbedder/index.js';
+
+# 📚 My Project Annotations
+
+New annotations are constantly being added and improved. Feel free to make a Hypothes.is account and contribute more!
+
+## Project A Feed (didacticcloud + test)
+
+<HypothesisAnnotations 
+  user="acct:didacticcloud@hypothes.is" 
+  tag="test" 
+  limit={10} 
+/>
+
+---
+
+## ⚙️ Project B Feed (Another User + different tag)
+
+<HypothesisAnnotations 
+  user="acct:didacticcloud@hypothes.is" 
+  tag="s3" 
+  limit={5} 
+/>
+
+

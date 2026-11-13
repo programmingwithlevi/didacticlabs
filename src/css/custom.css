@@ -1,0 +1,92 @@
+/* *
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */ 
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #4F5254;
+  --ifm-color-primary-dark: #4F5254;
+  --ifm-color-primary-darker: #4F5254;
+  --ifm-color-primary-darkest: #4F5254;
+  --ifm-color-primary-light: #4F5254;
+  --ifm-color-primary-lighter: #4F5254;
+  --ifm-color-primary-lightest: #4F5254;
+  /* --ifm-footer-background-color: black;
+  --ifm-footer-color: white;           
+  --ifm-footer-link-color: white; */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #FFBB39;
+  --ifm-color-primary-dark: #FFBB39;
+  --ifm-color-primary-darker: #FFBB39;
+  --ifm-color-primary-darkest: #FFBB39;
+  --ifm-color-primary-light: #FFBB39;
+  --ifm-color-primary-lighter: #FFBB39;
+  --ifm-color-primary-lightest: #FFBB39;
+  --ifm-footer-background-color: #FFBB39;
+  --ifm-footer-color: black;           
+  --ifm-footer-link-color: black;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} 
+[data-theme='dark'] .footer {
+  background: linear-gradient(to right, darkorange, #FFBB20);
+  
+}
+/* src/css/custom.css */
+
+
+.hero--primary {
+  /* Replace 'banner.jpg' with your file name */
+  background-image: url('/img/clouds.png') !important; 
+  
+  /* Make sure the image covers the entire banner area */
+  background-size: cover !important; 
+  
+  /* Prevent the image from tiling */
+  /* background-repeat: no-repeat !important;  */
+   
+  /* Center the image if the screen size changes */
+   /* background-position: center center !important;  */
+}
+.navbar__title {
+  color: orange;
+}
+.hero__title {
+  color: orange;
+  text-shadow: 
+  -3px -3px 0 #000,
+  3px -3px 0 #000,
+ -3px  3px 0 #000,
+  3px  3px 0 #000,
+  
+ /* Secondary 3px offset (horizontal and vertical only) for completeness */
+  3px  0px 0 #000,
+ -3px  0px 0 #000,
+  0px  3px 0 #000,
+  0px -3px 0 #000;
+  
+}
+/* src/css/custom.css */
+
+.hero.hero--primary .hero__title {
+  /* 1. New Background Styling */
+  background-color: #121212; /* Example: A dark gray background */
+  padding: 10px 20px;       /* Adds space around the text */
+  border-radius: 10px;      /* Makes the corners rounded */
+  display: inline-block;    /* Crucial: shrinks background to fit text */
+  
+  /* 2. Text Styling (Ensuring contrast and size) */
+  font-size: 3rem !important;
+  color: orange !important; /* Gold text color for contrast */
+  
+  /* 3. REMOVE the chunky border text-shadow properties */
+  text-shadow: none; 
+}
+
